@@ -21,15 +21,15 @@
             <h1>Variable Pizza</h1>
             <p><b>Welcome to Variable Pizza</b></p><p>Home of the world famous Veggissimo and Veganississimo Pies!</p><p>Please choose a pizza size and your preferred toppings and we'll give you a price for your sumptuous pizza.</p><BR>
           </div>
-          <form id = "pizzaSizeSelect">
+          <form id = "pizzaSelect">
             <div class="form-group">
               <label for="pizzaSize">Pizza Size</label>
               <select class="form-control pizza-size">
                 <option></option>
-                <option value ="Personal">Personal - 7" - $9</option>
-                <option value ="Small">Small - 10" - $12</option>
-                <option value ="Medium">Medium - 14" - $16</option>
-                <option value ="Large">Large - 18" - $22</option>
+                <option value ="personal">Personal - 7" - $9</option>
+                <option value ="small">Small - 10" - $12</option>
+                <option value ="medium">Medium - 14" - $16</option>
+                <option value ="large">Large - 18" - $22</option>
               </select>
             </div>
             <div class="form-group">
@@ -42,7 +42,7 @@
             </div>
             <div class="form-group">
               <label for="twoDollarTopping">Additional Toppings</label>
-              <select class="form-control two-dollar-toppings">
+              <select class="form-control two-dollar-topping">
                 <option></option>
                 <option value ="pepperoncinis">Pepperoncinis - add $2</option>
                 <option value ="olives">Olives - add $2</option>
@@ -51,7 +51,7 @@
             </div>
             <div class="form-group">
               <label for="threeDollarTopping">One More?</label>
-              <select class="form-control three-dollar-toppings">
+              <select class="form-control three-dollar-topping">
                 <option></option>
                 <option value ="tempeh">Tempeh - add $3</option>
                 <option value ="field-roast">Field Roast Sausage - add $3</option>
@@ -61,13 +61,18 @@
             <button type="submit" class="btn btn-success">Gimme Pizza!</button>
           </form>
         </div>
-      <div class="col-md-6">
-        <div class="col-md-3">
-          <div class="receipt">
-            <p class="blankSpaces"></p>
+        <div class="col-md-6">
+          <div id="show-receipt">
+            <p><b>Thank you for choosing Variable Pizza!</b></p>
+            <p>(503) 555 - 1212</p><BR>
+            <h4>Your Pizza:</h4>
+            <p>Size: <span class="final-pizza-size"></span></p>
+            <p>Style: <span class="final-pizza-style"></span></p>
+            <p>Additional Toppings: <span class="final-first-topping"></span>+<span class="final-second-topping"></span></p>
+            <p>Total: $<span class="final-pizza-price"></span>.00</p><BR>
+            <p><b>Buon giorno!</b></p>
           </div>
         </div>
-      </div>
     </div>
   </body>
 </html>

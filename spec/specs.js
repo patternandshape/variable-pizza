@@ -1,14 +1,15 @@
 describe("Pizza", function(){
-  it("will take in user information to return all ticket properties", function(){
-    var testTicket = new Ticket("Star Wars","6:45","16");
-    expect(testTicket.movieName).to.equal("Star Wars");
-    expect(testTicket.movieTime).to.equal("6:45");
-    expect(testTicket.personAge).to.equal("16");
-    expect(testTicket.ticketPrice).to.eql([]);
+  it("will take in user's choices to return all pizza properties", function(){
+    var testPizza = new Pizza("small", "veggie", "olives", "tempeh");
+    expect(testPizza.pizzaSize).to.equal("small");
+    expect(testPizza.pizzaStyle).to.equal("veggie");
+    expect(testPizza.twoDollarTopping).to.equal("olives");
+    expect(testPizza.threeDollarTopping).to.equal("tempeh");
+    expect(testPizza.pizzaPrice).to.eql([]);
   });
 
-  it("will return the price for a ticket based on selected items", function(){
-    var testTicket = new Ticket("Carol", "9:30pm", "adult");
-    expect(testTicket.price()).to.eq(11);
+  it("will return the price for the pizza based on selected items", function(){
+    var testPizza = new Pizza("large", "vegan", "olives", "tempeh");
+    expect(testPizza.price()).to.eq(30);
   });
 });

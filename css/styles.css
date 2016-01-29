@@ -20,17 +20,20 @@
 .row {
   margin-top: 20px;
   margin-left: 150px;
-  margin-right: 150px;
+  margin-right: 100px;
   font-size: 14px;
 }
 
 #pizza-entry {
   background-color: #FFF6E0;
   box-shadow: 10px 10px #ffe9b3;
-  box-shadow: 10px 10px #ffe9b3;
   padding: 40px;
   padding-top: 10px;
   text-align: center;
+  border-top-style: double;
+  border-bottom-style: double;
+  border-width: 9px;
+  border-color: #ca3435;
 }
 
 #pizza-entry h1 {
@@ -45,15 +48,23 @@
 	font-weight: 300;
 }
 
-.receipt {
+#show-receipt {
+  /*display: none;*/
   background-color: #fff;
-  padding: 150px;
-  padding-bottom: 250px;
-  margin: 60px;
-  margin-left: 150px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 300;
   box-shadow: 5px 5px #000;
   text-align: center;
-  /*display: none;*/
+  margin-left: 160px;
+  margin-top: 140px;
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-width: 1px;
+  border-color: #000;
 }
 
 .btn {
