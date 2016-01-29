@@ -1,37 +1,34 @@
 .jumbotron {
-  background-color: #ffdb4d;
-  color: #208CAC;
+  background-color: #ca3435;
+  color: #fff;
   padding: 20px;
 }
 
 .jumbotron .glyphicon {
-  font-size: 96px;
-  color: #fff;
+  font-size: 72px;
+  color: #004d00;
   margin-top: 5px;
 }
 
-.jumbotron .glyphicon:hover {
-  color: #000;
-}
-
 .jumbotron h1 {
-    font-size: 128px;
+    font-size: 96px;
+    font-family: sans-serif;
 }
 
-.rules {
-  margin: 80px;
+.row {
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
   color: #ffdb4d;
   font-size: 14px;
 }
 
 .rules p {
-  font-family: monospace;
   color: #fff;
 }
 
 .manWhoHangs {
   margin: 80px;
-  box-shadow: 10px 10px #000;
   background-color: #fff9cc;
   padding: 30px;
   text-align: center;
@@ -40,25 +37,23 @@
   margin-bottom: 140px;
 }
 
-.game {
-  background-color: #fff9cc;
-  padding: 50px;
-  margin: 80px;
-  box-shadow: 10px 10px #000;
+.receipt {
+  background-color: #fff;
+  padding: 150px;
+  padding-bottom: 250px;
+  margin: 60px;
+  margin-left: 150px;
+  box-shadow: 5px 5px #000;
   text-align: center;
-  font-family: monospace;
-  margin-top: 372px;
+  /*margin-top: 372px;*/
 }
-
-/*#letterSubmission {
-  margin: 80px;
-  margin-top: 10px;
-}*/
 
 .btn {
   margin-top: 10px;
 }
 
 body {
-  background-color: #208CAC;
+  /*background-color: #208CAC;*/
+  background-image: url("../img/checkers.jpg");
+  background-repeat: repeat;
 }
