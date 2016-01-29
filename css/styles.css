@@ -63,12 +63,17 @@
   box-shadow: 5px 5px #000;
   text-align: center;
   margin-left: 100px !important;
-  margin-top: 120px !important;
+  margin-top: 80px !important;
   border-top-style: dotted;
   border-right-style: solid;
   border-bottom-style: dotted;
   border-width: 1px;
   border-color: #000;
+  color: #666666;
+}
+
+#show-receipt .glyphicon {
+  font-size: 24px;
 }
 
 .btn {
