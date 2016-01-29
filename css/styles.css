@@ -17,16 +17,20 @@
   text-shadow: 2px 2px #7a1f20;
 }
 
+.pizza-logo {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
+}
+
 .row {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 150px;
-  margin-right: 100px;
+  margin-right: 150px;
   font-size: 14px;
 }
 
 #pizza-entry {
   background-color: #FFF6E0;
-  box-shadow: 10px 10px #ffe9b3;
   padding: 40px;
   padding-top: 10px;
   text-align: center;
@@ -58,8 +62,8 @@
   font-weight: 300;
   box-shadow: 5px 5px #000;
   text-align: center;
-  margin-left: 160px;
-  margin-top: 140px;
+  margin-left: 100px !important;
+  margin-top: 120px !important;
   border-top-style: dotted;
   border-right-style: solid;
   border-bottom-style: dotted;
