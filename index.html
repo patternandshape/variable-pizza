@@ -19,34 +19,43 @@
         <div class="col-md-6" id="pizza-entry">
           <div class="pizza-welcome">
             <h1>Variable Pizza</h1>
-            <p>Welcome to Variable Pizza!</p><p>Home of the famous Veggie and Vegan Pizzas.</p><p>Please choose a pizza size and your preferred toppings and we'll give you a total for your sumptuous pie!</p><BR>
+            <p><b>Welcome to Variable Pizza</b></p><p>Home of the world famous Veggissimo and Veganississimo Pies!</p><p>Please choose a pizza size and your preferred toppings and we'll give you a price for your sumptuous pizza.</p><BR>
           </div>
           <form id = "pizzaSizeSelect">
             <div class="form-group">
-              <label for="pizzaSize">Pizza Size:</label>
+              <label for="pizzaSize">Pizza Size</label>
               <select class="form-control pizza-size">
                 <option></option>
-                <option value ="Personal">Personal</option>
-                <option value ="Small">Small</option>
-                <option value ="Medium">Medium</option>
-                <option value ="Large">Large</option>
+                <option value ="Personal">Personal - 7" - $9</option>
+                <option value ="Small">Small - 10" - $12</option>
+                <option value ="Medium">Medium - 14" - $16</option>
+                <option value ="Large">Large - 18" - $22</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="veggieVegan">Veggie or Vegan?</label>
+              <label for="veggieVegan">Veggie / Vegan</label>
               <select class="form-control veggie-vegan">
                 <option></option>
                 <option value ="veggie">Veggie</option>
-                <option value ="vegan">Vegan</option>
+                <option value ="vegan">Vegan - with Daiya "cheese" - add $3</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="extraToppings">Extra Toppings:</label>
-              <select class="form-control extra-toppings">
+              <label for="twoDollarTopping">Additional Toppings</label>
+              <select class="form-control two-dollar-toppings">
                 <option></option>
-                <option value ="tempeh">Tempeh</option>
-                <option value ="olives">Olives</option>
-                <option value ="pepperoncinis">Pepperoncinis</option>
+                <option value ="pepperoncinis">Pepperoncinis - add $2</option>
+                <option value ="olives">Olives - add $2</option>
+                <option value ="red-onion">Red Onion - add $2</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="threeDollarTopping">One More?</label>
+              <select class="form-control three-dollar-toppings">
+                <option></option>
+                <option value ="tempeh">Tempeh - add $3</option>
+                <option value ="field-roast">Field Roast Sausage - add $3</option>
+                <option value ="black-tofu">Blackened Tofu - add $3</option>
               </select>
             </div>
             <button type="submit" class="btn btn-success">Gimme Pizza!</button>

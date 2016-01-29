@@ -1,28 +1,27 @@
 .jumbotron {
   background-color: #ca3435;
   color: #fff;
-  padding: 10px;
+  padding: 8px;
 }
 
 .jumbotron .glyphicon {
   font-size: 72px;
   color: #004d00;
   margin-top: 5px;
-    text-shadow: none;
+  text-shadow: 1px 1px #7a1f20;
 }
 
 .jumbotron h1 {
   font-size: 128px;
 	font-family: 'Brush Script MT', cursive;
-  text-shadow: 3px 3px #000;
+  text-shadow: 2px 2px #7a1f20;
 }
 
 .row {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 150px;
   margin-right: 150px;
   font-size: 14px;
-  /*background-color: #FFF6E0;*/
 }
 
 #pizza-entry {
@@ -30,31 +29,20 @@
   box-shadow: 10px 10px #ffe9b3;
   box-shadow: 10px 10px #ffe9b3;
   padding: 40px;
-  padding-top: 20px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 #pizza-entry h1 {
 	font-family: 'Brush Script MT', cursive;
   color: #004d00;
-  font-size: 36px;
+  font-size: 38px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px #fff0cc;
 }
 
 #pizza-entry p {
 	font-weight: 300;
-}
-
-.rules p {
-  color: #fff;
-}
-
-.manWhoHangs {
-  margin: 80px;
-  background-color: #fff9cc;
-  padding: 30px;
-  text-align: center;
-  font-size: 64px;
-  font-weight: bold;
-  margin-bottom: 140px;
 }
 
 .receipt {
@@ -65,7 +53,7 @@
   margin-left: 150px;
   box-shadow: 5px 5px #000;
   text-align: center;
-  /*margin-top: 372px;*/
+  /*display: none;*/
 }
 
 .btn {
