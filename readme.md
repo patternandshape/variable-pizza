@@ -29,4 +29,4 @@ A web application where a user chooses pizza size and toppings to their liking a
 
 *Licensed under GPL.*
 
-&copy;2016 **Torrence Stratton & Molly Curtin**
+&copy;2016 **Molly Curtin**
