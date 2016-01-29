@@ -7,7 +7,6 @@
 .jumbotron .glyphicon {
   font-size: 72px;
   color: #004d00;
-  margin-top: 5px;
   text-shadow: 1px 1px #7a1f20;
 }
 
@@ -15,11 +14,6 @@
   font-size: 128px;
 	font-family: 'Brush Script MT', cursive;
   text-shadow: 2px 2px #7a1f20;
-}
-
-.pizza-logo {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 30px;
 }
 
 .row {
@@ -74,6 +68,11 @@
 
 #show-receipt .glyphicon {
   font-size: 24px;
+}
+
+.pizza-logo {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
 }
 
 .btn {
