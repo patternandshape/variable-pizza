@@ -1,53 +1,62 @@
-function Ticket(movieName, movieTime, personAge) {
-  this.movieName = movieName;
-  this.movieTime = movieTime;
-  this.personAge = personAge;
-  this.ticketPrice = [];
+function Pizza(pizzaSize, pizzaStyle, twoDollarTopping, threeDollarTopping) {
+  this.pizzaSize = pizzaSize;
+  this.pizzaStyle = pizzaStyle;
+  this.twoDollarTopping = twoDollarTopping;
+  this.threeDollarTopping = threeDollarTopping;
+  this.pizzaPrice = [];
 }
 
-Ticket.prototype.price = function() {
-  var moviePrice = {};
-  moviePrice["Star Wars: The Force Awakens"] = 5;
-  moviePrice["Carol"] = 5;
-  moviePrice["Anomalisa"] = 5;
-  moviePrice["The Big Lebowski"] = 2;
-  moviePrice["Rosemary's Baby"] = 2;
+Pizza.prototype.price = function() {
+  var sizePrice = {};
+  sizePrice["personal"] = 9;
+  sizePrice["small"] = 12;
+  sizePrice["medium"] = 16;
+  sizePrice["large"] = 22;
 
-  var timePrice = {};
-  timePrice["12:00pm"] = 1;
-  timePrice["2:30pm"] = 1;
-  timePrice["4:30pm"] = 1;
-  timePrice["5:30pm"] = 3;
-  timePrice["7:30pm"] = 3;
-  timePrice["9:30pm"] = 3;
+  var stylePrice = {};
+  stylePrice["veggie"] = 0;
+  stylePrice["vegan"] = 3;
 
-  var agePrice = {};
-  agePrice["senior"] = 0;
-  agePrice["child"] = 0;
-  agePrice["adult"] = 3;
+  var twoDollarToppingPrice = {};
+  twoDollarToppingPrice["pepperoncinis"] = 2;
+  twoDollarToppingPrice["olives"] = 2;
+  twoDollarToppingPrice["red-onion"] = 2;
 
-  var total = moviePrice[this.movieName] + timePrice[this.movieTime] + agePrice[this.personAge];
+  var threeDollarToppingPrice = {};
+  threeDollarToppingPrice["tempeh"] = 3;
+  threeDollarToppingPrice["field-roast"] = 3;
+  threeDollarToppingPrice["black-tofu"] = 3;
+
+  var total = pizzaPrice[this.pizzaSize] + stylePrice[this.pizzaStyle] + twoDollarToppingPrice[this.twoDollarTopping] + threeDollarToppingPrice[this.threeDollarTopping];
   return total;
+  // console.log(pizzaSize);
+  //       console.log(pizzaStyle);
+  //             console.log(twoDollarTopping);
+  //                   console.log(threeDollarTopping);
 }
 
 function resetFields() {
-    $("select.movie-title").val("");
-    $("select.show-time").val("");
-    $("select.age-price").val("");
+    $("select.pizza-size").val("");
+    $("select.veggie-vegan").val("");
+    $("select.two-dollar-topping").val("");
+    $("select.three-dollar-topping").val("");
 }
 
 $(document).ready(function() {
-  $("form#movieSelect").submit(function() {
+  $("form#pizzaSelect").submit(function() {
     event.preventDefault();
 
-    var selectedMovie = $(this).find("select.movie-title").val();
-    var selectedTime = $(this).find("select.show-time").val();
-    var selectedAge = $(this).find("select.age-price").val();
-    var newTicket = new Ticket(selectedMovie, selectedTime, selectedAge)
+    var selectedSize = $(this).find("select.pizza-size").val();
+    var selectedStyle = $(this).find("select.veggie-vegan").val();
+    var selectedTwoDollarTopping = $(this).find("select.two-dollar-topping").val();
+    var selectedThreeDollarTopping = $(this).find("select.three-dollar-topping").val();
+    var newPizza = new Pizza(selectedSize, selectedStyle, selectedTwoDollarTopping, selectedThreeDollarTopping)
 
-      $(".movie-name").text(newTicket.movieName);
-      $(".movie-showtime").text(newTicket.movieTime);
-      $(".ticket-price").text(newTicket.price());
+      $(".final-pizza-size").text(newPizza.pizzaSize);
+      $(".final-pizza-style").text(newPizza.pizzaStyle);
+      $(".final-first-topping").text(newPizza.twoDollarTopping);
+      $(".final-second-topping").text(newPizza.threeDollarTopping);
+      $(".final-pizza-price").text(newPizza.price());
 
     resetFields();
   });

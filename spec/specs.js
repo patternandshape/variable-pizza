@@ -9,7 +9,7 @@ describe("Pizza", function(){
   });
 
   it("will return the price for the pizza based on selected items", function(){
-    var testPizza = new Pizza("large", "vegan", "olives", "tempeh");
+    var testPizza = new Pizza("large","vegan","olives","tempeh");
     expect(testPizza.price()).to.eq(30);
   });
 });
