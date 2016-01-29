@@ -1,26 +1,46 @@
 .jumbotron {
   background-color: #ca3435;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .jumbotron .glyphicon {
   font-size: 72px;
   color: #004d00;
   margin-top: 5px;
+    text-shadow: none;
 }
 
 .jumbotron h1 {
-    font-size: 96px;
-    font-family: sans-serif;
+  font-size: 128px;
+	font-family: 'Brush Script MT', cursive;
+  text-shadow: 3px 3px #000;
 }
 
 .row {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 150px;
   margin-right: 150px;
-  color: #ffdb4d;
   font-size: 14px;
+  /*background-color: #FFF6E0;*/
+}
+
+#pizza-entry {
+  background-color: #FFF6E0;
+  box-shadow: 10px 10px #ffe9b3;
+  box-shadow: 10px 10px #ffe9b3;
+  padding: 40px;
+  padding-top: 20px;
+}
+
+#pizza-entry h1 {
+	font-family: 'Brush Script MT', cursive;
+  color: #004d00;
+  font-size: 36px;
+}
+
+#pizza-entry p {
+	font-weight: 300;
 }
 
 .rules p {
@@ -49,11 +69,10 @@
 }
 
 .btn {
-  margin-top: 10px;
+  margin-top:10px;
 }
 
 body {
-  /*background-color: #208CAC;*/
   background-image: url("../img/checkers.jpg");
   background-repeat: repeat;
 }

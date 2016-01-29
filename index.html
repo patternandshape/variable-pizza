@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>VARIABLE PIZZA</title>
+    <title>Variable Pizza</title>
   </head>
   <body>
     <div class="jumbotron">
       <h1 class="text-center"><span class="glyphicon glyphicon-grain
-        " aria-hidden="true"></span> VARIABLE PIZZA <span class="glyphicon glyphicon-grain
+        " aria-hidden="true"></span> Variable Pizza <span class="glyphicon glyphicon-grain
         " aria-hidden="true"></span></h1>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="rules">
-            <h3>VARIABLE PIZZA</h3>
-            <p>Welcome to Variable Pizza!</p><p>Home to the famous Veggie and Vegan Pizzas.</p><p>Please choose your pizza size and preferred toppings and we'll give you a total for your delicious pizza.</p><BR>
+        <div class="col-md-6" id="pizza-entry">
+          <div class="pizza-welcome">
+            <h1>Variable Pizza</h1>
+            <p>Welcome to Variable Pizza!</p><p>Home of the famous Veggie and Vegan Pizzas.</p><p>Please choose a pizza size and your preferred toppings and we'll give you a total for your sumptuous pie!</p><BR>
           </div>
           <form id = "pizzaSizeSelect">
             <div class="form-group">
@@ -36,8 +36,8 @@
               <label for="veggieVegan">Veggie or Vegan?</label>
               <select class="form-control veggie-vegan">
                 <option></option>
-                <option value ="12:00pm">Veggie</option>
-                <option value ="2:30pm">Vegan</option>
+                <option value ="veggie">Veggie</option>
+                <option value ="vegan">Vegan</option>
               </select>
             </div>
             <div class="form-group">
@@ -49,7 +49,7 @@
                 <option value ="pepperoncinis">Pepperoncinis</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-success">Get Pizza!</button>
+            <button type="submit" class="btn btn-success">Gimme Pizza!</button>
           </form>
         </div>
       <div class="col-md-6">
