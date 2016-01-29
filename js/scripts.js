@@ -21,7 +21,7 @@ Pizza.prototype.price = function() {
   twoDollarToppingPrice[""] = 0;
   twoDollarToppingPrice["pepperoncinis"] = 2;
   twoDollarToppingPrice["olives"] = 2;
-  twoDollarToppingPrice["red-onion"] = 2;
+  twoDollarToppingPrice["red onion"] = 2;
 
   var threeDollarToppingPrice = {};
   threeDollarToppingPrice[""] = 0;
