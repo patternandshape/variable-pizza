@@ -8,14 +8,14 @@ function Pizza(pizzaSize, pizzaStyle, twoDollarTopping, threeDollarTopping) {
 
 Pizza.prototype.price = function() {
   var sizePrice = {};
-  sizePrice["personal"] = 9;
-  sizePrice["small"] = 12;
-  sizePrice["medium"] = 16;
-  sizePrice["large"] = 22;
+  sizePrice["Personal"] = 9;
+  sizePrice["Small"] = 12;
+  sizePrice["Medium"] = 16;
+  sizePrice["Large"] = 22;
 
   var stylePrice = {};
-  stylePrice["veggie"] = 0;
-  stylePrice["vegan"] = 3;
+  stylePrice["Veggissimo"] = 0;
+  stylePrice["Veganississimo"] = 3;
 
   var twoDollarToppingPrice = {};
   twoDollarToppingPrice["pepperoncinis"] = 2;
@@ -24,18 +24,18 @@ Pizza.prototype.price = function() {
 
   var threeDollarToppingPrice = {};
   threeDollarToppingPrice["tempeh"] = 3;
-  threeDollarToppingPrice["field-roast"] = 3;
-  threeDollarToppingPrice["black-tofu"] = 3;
+  threeDollarToppingPrice["Field Roast sausage"] = 3;
+  threeDollarToppingPrice["blackened tofu"] = 3;
 
   var total = sizePrice[this.pizzaSize] + stylePrice[this.pizzaStyle] + twoDollarToppingPrice[this.twoDollarTopping] + threeDollarToppingPrice[this.threeDollarTopping];
   return total;
 }
 
 function resetFields() {
-    $("select.pizza-size").val("");
-    $("select.veggie-vegan").val("");
-    $("select.two-dollar-topping").val("");
-    $("select.three-dollar-topping").val("");
+  $("select.pizza-size").val("");
+  $("select.veggie-vegan").val("");
+  $("select.two-dollar-topping").val("");
+  $("select.three-dollar-topping").val("");
 }
 
 $(document).ready(function() {
@@ -48,11 +48,12 @@ $(document).ready(function() {
     var selectedThreeDollarTopping = $(this).find("select.three-dollar-topping").val();
     var newPizza = new Pizza(selectedSize, selectedStyle, selectedTwoDollarTopping, selectedThreeDollarTopping)
 
-      $(".final-pizza-size").text(newPizza.pizzaSize);
-      $(".final-pizza-style").text(newPizza.pizzaStyle);
-      $(".final-first-topping").text(newPizza.twoDollarTopping);
-      $(".final-second-topping").text(newPizza.threeDollarTopping);
-      $(".final-pizza-price").text(newPizza.price());
+    $("#show-receipt").show();
+    $(".final-pizza-size").text(newPizza.pizzaSize);
+    $(".final-pizza-style").text(newPizza.pizzaStyle);
+    $(".final-first-topping").text(newPizza.twoDollarTopping);
+    $(".final-second-topping").text(newPizza.threeDollarTopping);
+    $(".final-pizza-price").text(newPizza.price());
 
     resetFields();
   });
