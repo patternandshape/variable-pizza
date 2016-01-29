@@ -18,11 +18,13 @@ Pizza.prototype.price = function() {
   stylePrice["Veganississimo"] = 3;
 
   var twoDollarToppingPrice = {};
+  twoDollarToppingPrice[""] = 0;
   twoDollarToppingPrice["pepperoncinis"] = 2;
   twoDollarToppingPrice["olives"] = 2;
   twoDollarToppingPrice["red-onion"] = 2;
 
   var threeDollarToppingPrice = {};
+  threeDollarToppingPrice[""] = 0;
   threeDollarToppingPrice["tempeh"] = 3;
   threeDollarToppingPrice["Field Roast sausage"] = 3;
   threeDollarToppingPrice["blackened tofu"] = 3;
