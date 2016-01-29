@@ -27,12 +27,8 @@ Pizza.prototype.price = function() {
   threeDollarToppingPrice["field-roast"] = 3;
   threeDollarToppingPrice["black-tofu"] = 3;
 
-  var total = pizzaPrice[this.pizzaSize] + stylePrice[this.pizzaStyle] + twoDollarToppingPrice[this.twoDollarTopping] + threeDollarToppingPrice[this.threeDollarTopping];
+  var total = sizePrice[this.pizzaSize] + stylePrice[this.pizzaStyle] + twoDollarToppingPrice[this.twoDollarTopping] + threeDollarToppingPrice[this.threeDollarTopping];
   return total;
-  // console.log(pizzaSize);
-  //       console.log(pizzaStyle);
-  //             console.log(twoDollarTopping);
-  //                   console.log(threeDollarTopping);
 }
 
 function resetFields() {
