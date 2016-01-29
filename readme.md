@@ -23,7 +23,7 @@ A web application where a user chooses pizza size and toppings to their liking a
 * Bootstrap
 * BDD
 
-###Hangman can be viewed at http://patternandshape.github.io/variable-pizza
+###Variable Pizza can be viewed at http://patternandshape.github.io/variable-pizza
 
 ### License
 
