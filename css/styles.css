@@ -1,0 +1,64 @@
+.jumbotron {
+  background-color: #ffdb4d;
+  color: #208CAC;
+  padding: 20px;
+}
+
+.jumbotron .glyphicon {
+  font-size: 96px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.jumbotron .glyphicon:hover {
+  color: #000;
+}
+
+.jumbotron h1 {
+    font-size: 128px;
+}
+
+.rules {
+  margin: 80px;
+  color: #ffdb4d;
+  font-size: 14px;
+}
+
+.rules p {
+  font-family: monospace;
+  color: #fff;
+}
+
+.manWhoHangs {
+  margin: 80px;
+  box-shadow: 10px 10px #000;
+  background-color: #fff9cc;
+  padding: 30px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 140px;
+}
+
+.game {
+  background-color: #fff9cc;
+  padding: 50px;
+  margin: 80px;
+  box-shadow: 10px 10px #000;
+  text-align: center;
+  font-family: monospace;
+  margin-top: 372px;
+}
+
+/*#letterSubmission {
+  margin: 80px;
+  margin-top: 10px;
+}*/
+
+.btn {
+  margin-top: 10px;
+}
+
+body {
+  background-color: #208CAC;
+}
