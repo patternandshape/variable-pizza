@@ -1,32 +1,31 @@
 # Variable Pizza
 
-#### A website for a pizza company where a user can order a pizza and see the final cost.
-#### January 29, 2016
+January 29, 2016
 
-#### By Molly Curtin
+##### By Molly Curtin
 
-## Description
+### Description
 
 A web application where a user chooses pizza size and toppings to their liking and receives a total cost for said pizza.
 
-
-## Technologies Used
+##### Technologies Used
 
 * HTML
 * CSS
 * JavaScript
-* JQuery
-* Atom
-* Terminal
-* Chai
+* jQuery
 * Mocha
-* Bootstrap
+* Chai
 * BDD
+* Bootstrap
+* Git
 
 ###Variable Pizza can be viewed at http://patternandshape.github.io/variable-pizza
 
-### License
+##### License
 
-*Licensed under GPL.*
+*This software is licensed under the MIT license.*
+
+&copy;2016 **Molly Curtin**
 
 &copy;2016 **Molly Curtin**
