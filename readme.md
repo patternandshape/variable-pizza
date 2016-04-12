@@ -27,5 +27,3 @@ A web application where a user chooses pizza size and toppings to their liking a
 *This software is licensed under the MIT license.*
 
 &copy;2016 **Molly Curtin**
-
-&copy;2016 **Molly Curtin**
